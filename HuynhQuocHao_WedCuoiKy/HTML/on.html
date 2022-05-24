@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/on.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm border border-dark" style="width: 100%;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Dang ky</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">home</a>
+                        <div class="dropdown-menu">
+                            <a id="formdangky" href="" class="dropdown-item" data-toggle="modal">form dang ky</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="w-100 text-center">Huynh Quoc Hao</h1>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                           <div class="row">
+                            <label class="col-md-4" for="">Ho ten:</label>
+                            <div class="col-md-8">
+                                <input type="text" id="txthoten" class="form-control">
+                                <span id="erhoten" class="text-danger">(*)</span>
+                            </div>
+                           </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                       <div class="col-md-9">
+                        <button type="button" class="btn" style="background-color: chartreuse;">dang ky</button>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

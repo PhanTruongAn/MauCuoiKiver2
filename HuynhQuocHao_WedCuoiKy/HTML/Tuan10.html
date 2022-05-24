@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi Cuoi Ky</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/ThiCuoiKy.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row border border-dark">
+            <h1 class="col-md-12">Huynh Quoc Hao</h1>
+            <h3 class="col-md-12">20092211</h3>
+        </div>
+        <!-- này em thêm để ôn thôi -->
+        <!-- <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="width: 100%;">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">dang ky</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#" data-toggle="modal" id="formdangky">form dang ky</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div> -->
+        <div class="row">
+            <div class="col-md-9 border border-dark">
+               <form action="">
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Ho ten nguoi dat:</label>
+                        <div class="col-md-8">
+                            <input type="text" id="txthoten" class="form-control">
+                            <span id="erhoten" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Ngay Den:</label>
+                        <div class="col-md-8">
+                            <input type="date" id="txtngayden" class="form-control">
+                            <span id="erngayden" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Ngay di:</label>
+                        <div class="col-md-8">
+                            <input type="date" id="txtngaydi" class="form-control">
+                            <span id="erngaydi" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">So ngay:</label>
+                        <div class="col-md-8">
+                            <input type="text" id="txtsongay" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Loai Phong:</label>
+                        <div class="col-md-8">
+                           <select id="txtloaiphong" class="form-control">
+                               <option value="Luxury">Luxury</option>
+                               <option value="Superior">Superior</option>
+                               <option value="View Sea">View Sea</option>
+                               <option value="Pool view">Pool viewy</option>
+                           </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Gia phong:</label>
+                        <div class="col-md-8">
+                            <input type="text" id="txtgiaphong" class="form-control" readonly value="1200000">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for="">Loai Phong:</label>
+                        <div class="col-md-8">
+                          <input type="checkbox" id="txtgiatui">
+                          <label for="">Giat ui</label>
+                          <input type="checkbox" id="txtxeduaruoc">
+                          <label for="">Xe dua ruoc</label>
+                          <input type="checkbox" id="txtansang">
+                          <label for="">an sang tai phong</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-md-4" for=""></label>
+                        <div class="col-md-8">
+                          <button type="button" id="btndangky" class="btn" style="background-color: chartreuse;">Dang Ky</button>
+                        </div>
+                    </div>
+                </div>
+               </form>
+            </div>
+            <div class="col-md-3 border border-dark d-flex flex-wrap justify-content-center align-content-center">
+                <img src="../IMAGE/tuan10.PNG" alt="" class="w-75">
+            </div>
+        </div>
+        <div class="row">
+            <h3>Phieu thanh toan</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ho ten nguoi dat</th>
+                        <th>ngay di</th>
+                        <th>Ngay den</th>
+                        <th>so ngay</th>
+                        <th>loai phong</th>
+                        <th>dich vu</th>
+                        <th>tong chi phi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="row" style="background-color: gray;">
+            <p class="col-md-12 text-center">Huynh Quoc Hao-20092211</p>
+        </div>
+    </div>
+
+    <!-- này em cũng làm thêm để ôn -->
+    <!-- Modal
+    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-9 border border-dark">
+                        <form action="">
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Ho ten nguoi dat:</label>
+                                 <div class="col-md-8">
+                                     <input type="text" id="txthoten" class="form-control">
+                                     <span id="erhoten" class="text-danger">(*)</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Ngay Den:</label>
+                                 <div class="col-md-8">
+                                     <input type="date" id="txtngayden" class="form-control">
+                                     <span id="erngayden" class="text-danger">(*)</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Ngay di:</label>
+                                 <div class="col-md-8">
+                                     <input type="date" id="txtngaydi" class="form-control">
+                                     <span id="erngaydi" class="text-danger">(*)</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">So ngay:</label>
+                                 <div class="col-md-8">
+                                     <input type="text" id="txtsongay" class="form-control">
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Loai Phong:</label>
+                                 <div class="col-md-8">
+                                    <select id="txtloaiphong" class="form-control">
+                                        <option value="Luxury">Luxury</option>
+                                        <option value="Superior">Superior</option>
+                                        <option value="View Sea">View Sea</option>
+                                        <option value="Pool view">Pool viewy</option>
+                                    </select>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Gia phong:</label>
+                                 <div class="col-md-8">
+                                     <input type="text" id="txtgiaphong" class="form-control" readonly value="1200000">
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for="">Loai Phong:</label>
+                                 <div class="col-md-8">
+                                   <input type="checkbox" id="txtgiatui">
+                                   <label for="">Giat ui</label>
+                                   <input type="checkbox" id="txtxeduaruoc">
+                                   <label for="">Xe dua ruoc</label>
+                                   <input type="checkbox" id="txtansang">
+                                   <label for="">an sang tai phong</label>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="row">
+                                 <label class="col-md-4" for=""></label>
+                                 <div class="col-md-8">
+                                   <button type="button" id="btndangky" class="btn" style="background-color: chartreuse;">Dang Ky</button>
+                                 </div>
+                             </div>
+                         </div>
+                        </form>
+                     </div>
+                </div>
+                <div class="modal-footer">
+                  
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
